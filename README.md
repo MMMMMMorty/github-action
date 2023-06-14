@@ -20,7 +20,7 @@ jobs:
       security-events: write
     steps:
     - uses: actions/checkout@v3
-    - uses: kubescape/github-action@main
+    - uses: MMMMMMorty/github-action@main
       continue-on-error: true
       with:
         format: sarif
@@ -62,7 +62,7 @@ jobs:
     - name: Get changed files
       id: changed-files
       uses: tj-actions/changed-files@v35
-    - uses: kubescape/github-action@main
+    - uses: MMMMMMorty/github-action@main
       with:
         account: ${{secrets.KUBESCAPE_ACCOUNT}}
         files: ${{ steps.changed-files.outputs.all_changed_files }}
@@ -100,7 +100,7 @@ jobs:
     - name: Get changed files
       id: changed-files
       uses: tj-actions/changed-files@v35
-    - uses: kubescape/github-action@main
+    - uses: MMMMMMorty/github-action@main
       with:
         account: ${{secrets.KUBESCAPE_ACCOUNT}}
         files: ${{ steps.changed-files.outputs.all_changed_files }}
@@ -205,7 +205,7 @@ jobs:
       security-events: write
     steps:
     - uses: actions/checkout@v3
-    - uses: kubescape/github-action@main
+    - uses: MMMMMMorty/github-action@main
       continue-on-error: true
       with:
         format: sarif
@@ -234,7 +234,7 @@ jobs:
       security-events: write
     steps:
     - uses: actions/checkout@v3
-    - uses: kubescape/github-action@main
+    - uses: MMMMMMorty/github-action@main
       continue-on-error: true
       with:
         format: sarif
@@ -263,7 +263,7 @@ jobs:
       security-events: write
     steps:
       - uses: actions/checkout@v3
-      - uses: kubescape/github-action@main
+      - uses: MMMMMMorty/github-action@main
         continue-on-error: true
         with:
           format: sarif
@@ -292,7 +292,7 @@ jobs:
       security-events: write
     steps:
       - uses: actions/checkout@v3
-      - uses: kubescape/github-action@main
+      - uses: MMMMMMorty/github-action@main
         continue-on-error: false
         with:
           format: sarif
@@ -319,7 +319,7 @@ jobs:
       security-events: write
     steps:
       - uses: action/checkout@v3
-      - uses: kubescape/github-action@main
+      - uses: MMMMMMorty/github-action@main
         continue-on-error: false
         with:
           format: sarif
