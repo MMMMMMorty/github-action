@@ -1,4 +1,4 @@
-FROM mmmmmmorty/kubescape:kubescape-5
+FROM mmmmmmorty/kubescape:v3.0.1
 
 # Kubescape uses root privileges for writing the results to a file
 USER root
